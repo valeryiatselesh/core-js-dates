@@ -214,7 +214,7 @@ function getWeekNumberByDate(/* date */) {
 function getNextFridayThe13th(date) {
   const newDate = new Date(date);
 
-  while (true) {
+  for (;;) {
     newDate.setDate(newDate.getDate() + 1);
 
     const dayOfWeek = newDate.getDay();
